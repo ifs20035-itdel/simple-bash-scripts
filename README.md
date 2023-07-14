@@ -1,5 +1,8 @@
 A collection of simple Bash scripts.
 
+## Dependencies
+1. `bc`
+
 ## Getting Started
 
 1. [Hello.sh](scripts/hello-world.sh): get a simple output
