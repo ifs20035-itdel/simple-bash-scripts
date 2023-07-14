@@ -1,7 +1,8 @@
 A collection of simple Bash scripts.
 
 ## Dependencies
-1. `bc`
+1. for calculator : `bc`
+2. 
 
 ## Getting Started
 
