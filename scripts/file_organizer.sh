@@ -8,6 +8,8 @@ declare -A folders = (
 	["jpg"] = "Images"
 	["png"] = "Images"
 	["jpeg"] = "Images"
+	["zip"] = "Compress"
+	["rar"] = "Compress"
 )
 
 for file in "$TARGET_DIR"/*;do
