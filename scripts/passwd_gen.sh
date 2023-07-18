@@ -44,4 +44,20 @@ numbers="${numbers,,}"
 up_case="${upcase,,}"
 
 
-if [[""]]
+if [["$special_char"!="y" && "$special_char"!="n"]]; then
+	echo "Invalid input. Please enter 'y' or 'n'."
+	exit 1
+fi
+
+if [["$numbers"!="y" && "$numbers"!="n"]]; then
+	echo "Invalid input. Please enter 'y' or 'n'."
+	exit 1
+fi
+if [["$up_case"!="y" && "$up_case"!="n"]]; then
+	echo "Invalid input. Please enter 'y' or 'n'."
+	exit 1
+fi
+
+password=$(generate_passwd "$pass_length" "$special_char" "$numbers" "$up_case")
+
+echo "generated password: $password"
