@@ -21,3 +21,6 @@ $DESTINATION = '~/Documents'
 # The '1' means that the standard output to rewrite into the file success.txt
 # The '2' means that the standart error to rewrite into the file error.txt
 cp -v * $DESTINATION 1>sucess.txt 2>error.txt
+
+# If you want to redirect all the logs into the same file, you can do it with '&' sign
+cp -v * $DESTINATION &>logs.txt
